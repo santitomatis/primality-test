@@ -2,6 +2,7 @@ def is_primal(number):
     result = True
     if number == 1:
         return(False)
+        
     else:
         result = True
 
