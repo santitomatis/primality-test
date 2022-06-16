@@ -1,16 +1,22 @@
 def is_primal(number):
-    validator = True
+    result = True
+    if number == 1:
+        return(False)
+    else:
+        result = True
 
     for i in range(1, number + 1):
         if i == 1 or i == number:
             continue
 
         if number % i == 0:
-            validator = False
-            return(validator)
-        
-        return(validator)
+            result = False
 
+    if result == True:
+        return(True)
+    
+    else:
+        return(False)
         
 
 def run():
